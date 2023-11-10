@@ -1,0 +1,21 @@
+{
+  "name": "chat_application",
+  "version": "1.0.0",
+  "description": "Building up chat app using nodejs & socket",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mahmudul hasan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^2.3.0",
+    "socket.io-file": "^2.0.31",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

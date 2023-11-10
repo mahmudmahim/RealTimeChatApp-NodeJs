@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans',sans-serif;
+    display: grid;
+    place-items: center;
+    background-color: lightcyan;
+}
+.card{
+	width: 400px;
+	border: none;
+	border-radius: 15px;
+}
+.adiv{
+	background: #04CB28;
+	border-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	font-size: 17px;
+    font-weight: 600;
+	height: 46px;
+}
+
+
+
+.main{
+    border: 6px solid grey;
+    border-style: ridge;
+    border-radius: 22px;
+    overflow: hidden;
+}
+.name{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 9px 15px;
+    color: mediumseagreen;
+    background-color: aquamarine;
+}
+
+.name > span{
+    color: black;
+    margin-right: 5px;
+}
+
+.name-input{
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 32px;
+}
+
+.message-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    width: 400px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.message-left,
+.message-right{
+    list-style: none;
+    padding: 8px 12px;
+    margin:12px;
+    max-width: 250px;
+    font-size: 18px;
+
+}
+.message-left{
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    background-color: #036ACB;
+    box-shadow: -2px 2px 4px #dcdcdc;
+    color: white;
+}
+
+.message-right{
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-end;
+    background-color: #EFEFEF;
+    box-shadow: -2px 2px 4px #dcdcdc;
+    color: black;
+}
+
+.message-left > p > span,
+.message-right > p > span{
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.feedback{
+    font-style: italic;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    color: #ab62f0;
+    text-align: center;
+}
+.message-form{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.message-input{
+    flex-grow: 1;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: auto;
+    padding: 0 14px;
+    background-color: #fff;
+    margin-bottom: 4px;
+    margin-left: 3px;
+}
+.send-button{
+    height: 48px;
+    font-size: 16px;
+    border: none;
+    padding: 0px 13px;
+    background-color: deepskyblue;
+    font-weight: 600;
+    margin-left: 3px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.file-btn{
+    height: 48px;
+    font-size: 23px;
+    border: none;
+    padding: 0px 18px;
+    font-weight: 600;
+    background-color: deepskyblue;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.v-divider{
+    height: 48px;
+    width: 2px;
+    background-color: #f6f6f6;
+}
+.clients-total{
+    margin: 20px 0;
+    color: #06f82a;
+    font-size: 17px;
+    font-weight: 600;
+}

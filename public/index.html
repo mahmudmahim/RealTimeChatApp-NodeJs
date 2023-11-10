@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/socket.io.js"></script>
+    <script src="./scripts/socket.io-file-client.js"></script>
+    <link rel="shortcut icon" href="#">
+    <title>Chat App</title>
+</head>
+<body>
+    <h1 class="title">Chat Application</h1>
+        <div class="card mt-5">
+          <div class="d-flex flex-row justify-content-between p-3 adiv text-white">
+            <i class="fas fa-chevron-left"></i>
+            <span class="pb-3">Live Global Chat</span>
+            <i class="fas fa-times"></i>
+            </div>
+          </div>
+    <div class="main">
+        <div class="name">
+            <span><i class="far fa-user"></i></span>
+            <input type="text" id="name-input" class="name-input" value="" placeholder="Enter Your Name" maxlength="20"/>
+        </div>
+
+        <ul class="message-container" id="message-container">
+        <!--#03A9F4-->
+            <div class="img" id="imgShow"></div>
+            
+        </ul>
+    
+        <form class="message-form" id="message-form" enctype="multipart/form-data">
+            <label class="file-btn" id="sendPicture">
+                <span ><i class="fas fa-solid fa-paperclip" style="margin-top: 15px;"></i></span>
+                <input type="file" id="fileInput" style="display: none;">
+            </label>
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="divider"></div>
+            <button type="submit" class="send-button">
+                Send <span><i class="fas fa-paper-plane"></i></span>
+            </button>
+        </form>
+    </div>
+    <h3 class="clients-total" id="clients-total">Available User: 2</h3>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"
+    integrity="sha512-Q1f3TS3vSt1jQ8AwP2OuenztnLU6LwxgyyYOG1jgMW/cbEMHps/3wjvnl1P3WTrF3chJUWEoxDUEjMxDV8pujg=="
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
